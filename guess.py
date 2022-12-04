@@ -8,7 +8,7 @@ import json
 import time
 import pandas as pd
 from google.cloud import bigquery
-count = 280
+count = 1
 
 username = 'sp46364524'
 password = '!Angelo778899'
@@ -152,8 +152,8 @@ if __name__ == '__main__':
         bigquery.SchemaField("id", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("size", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("color", bigquery.enums.SqlTypeNames.STRING),
-        bigquery.SchemaField("old_price", bigquery.enums.SqlTypeNames.FLOAT),
-        bigquery.SchemaField("new_price", bigquery.enums.SqlTypeNames.FLOAT),
+        bigquery.SchemaField("old_price", bigquery.enums.SqlTypeNames.STRING),
+        bigquery.SchemaField("new_price", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("name", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("description", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("image_str", bigquery.enums.SqlTypeNames.STRING),
