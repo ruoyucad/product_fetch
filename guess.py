@@ -27,7 +27,7 @@ all_description = []
 all_image_str = []
 
 #  获取页面源代码
-def get_url_source(url = 'https://www.guess.com/ca/en/men/apparel/view-all?start=0&sz=10'):
+def get_url_source(url = 'https://www.guess.com/ca/en/men/apparel/view-all?start=0&sz=5'):
 
 
     scraper = cfscrape.create_scraper()
@@ -140,6 +140,7 @@ if __name__ == '__main__':
      'image_str': all_image_str,
 
     })
+    print(guess_data)
     # set GOOGLE_APPLICATION_CREDENTIALS env var to the json location
     client = bigquery.Client()
     job_config = bigquery.LoadJobConfig(
