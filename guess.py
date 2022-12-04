@@ -14,7 +14,7 @@ username = 'sp46364524'
 password = '!Angelo778899'
 proxy = f'http://{username}-sessionduration-1:{password}@us.smartproxy.com:10007'
 table_id = "buymamanagement.buyma_ruoyu.guess_data"
-
+#
 
 
 all_id = []
