@@ -18,6 +18,7 @@ table_id = "buymamanagement.buyma_ruoyu.guess_data"
 
 
 all_id = []
+
 all_url = []
 all_size = []
 all_color = []
