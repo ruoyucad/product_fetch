@@ -28,7 +28,7 @@ all_description = []
 all_image_str = []
 
 #  获取页面源代码
-def get_url_source(url = 'https://www.guess.com/ca/en/men/apparel/view-all?start=0&sz=5'):
+def get_url_source(url = 'https://www.guess.com/ca/en/men/apparel/view-all?start=0&sz=430'):
 
 
     scraper = cfscrape.create_scraper()
