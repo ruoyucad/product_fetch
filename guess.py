@@ -11,7 +11,7 @@ from google.cloud import bigquery
 count = 1
 
 username = 'sp46364524'
-password = '!Angelo778899'
+password = ''
 proxy = f'http://{username}-sessionduration-1:{password}@us.smartproxy.com:10007'
 table_id = "buymamanagement.buyma_ruoyu.guess_data"
 #
