@@ -143,7 +143,7 @@ if __name__ == '__main__':
      'image_str': all_image_str,
 
     })
-    print(guess_data)
+    print(guess_data.head())
     # set GOOGLE_APPLICATION_CREDENTIALS env var to the json location
     client = bigquery.Client()
     job_config = bigquery.LoadJobConfig(
