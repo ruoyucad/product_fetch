@@ -18,6 +18,7 @@ table_id = "buymamanagement.buyma_ruoyu.guess_data"
 
 
 all_id = []
+all_url = []
 all_size = []
 all_color = []
 all_old_price = []
@@ -103,6 +104,7 @@ def parse_data(resp):
         #row = [id, name, old_price, new_price, sizes, colors, description, image_str]
         #write_csv(row)
         all_id.append(id)
+        all_url.append(href)
         all_size.append(sizes)
         all_color.append(colors)
         all_old_price.append(old_price)
@@ -131,6 +133,7 @@ if __name__ == '__main__':
 
     guess_data = pd.DataFrame(
     {'id': all_id,
+     'url': all_url,
      'size': all_size,
      'color': all_color,
      'old_price': all_old_price,
@@ -151,6 +154,7 @@ if __name__ == '__main__':
         # example the "title" column uses pandas dtype "object", so its
         # data type is ambiguous.
         bigquery.SchemaField("id", bigquery.enums.SqlTypeNames.STRING),
+        bigquery.SchemaField("url", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("size", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("color", bigquery.enums.SqlTypeNames.STRING),
         bigquery.SchemaField("old_price", bigquery.enums.SqlTypeNames.STRING),
